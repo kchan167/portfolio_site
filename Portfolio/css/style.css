@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*  =================================================================
+    0. Container
+    =================================================================*/
+/* Font family */
+.container {
+    font-family: "DejaVu Sans Mono", cursive, sans-serif;
+}
+/*  =================================================================
+    1. Header
+    =================================================================*/
+/* Udacity logo position */
+.alignImage {
+    position: relative;
+    height: 100px;
+ }
+
+/* Logo image */
+.alignImage img{
+    position: absolute;
+    bottom: 0;
+ }
+/* Big image of Udacity logo */
+.image-full {
+    display: block;
+}
+
+/* Small version of Udacity logo */
+.image-mobile {
+    position:absolute;
+    visibility: hidden;
+    display: none;
+}
+
+/* Name and Title by the top-right corner of the site */
+.name {
+    text-align: right;
+}
+
+/* Name text */
+.name h1 {
+    font-size: 50px;
+}
+
+/* 'Front End Ninja' */
+header h3 {
+    color: #696969;
+}
+
+/*  =================================================================
+    2. Separate Line
+    =================================================================*/
+
+/* Ruler used to separate content */
+.container hr {
+    height: 2px;
+    color: #696969;
+    background-color: #696969;
+    margin-top: 0;
+}
+
+/*  =================================================================
+    3. Featured Work
+    =================================================================*/
+
+/* Header for Feature Work */
+.feature {
+    font-size: 35px;
+    color: #696969;
+}
+/* Small image of featured works */
+.small {
+    display: block;
+}
+
+/* Big image of featured works */
+.big {
+    position:absolute;
+    visibility: hidden;
+    display: none;
+}
+
+/* Responsive images */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Image of featerd images */
+.featured {
+    max-height: 250px;
+    max-width: 340px;
+}
+
+/* Title of Feature Work */
+.text-center h3 {
+    text-transform: uppercase;
+    color: #696969;
+}
+
+/* Paragraph of the link */
+.text-center p {
+    word-wrap: break-word;
+}
+
+/* Link */
+.text-center a {
+    color: #747474;
+}
+
+/*  =================================================================
+    4. Responsive Design
+    =================================================================*/
+
+/* 4.1 Medium Screen: Tablets and Desktops below 992px
+   ==================================================================*/
+@media only screen and (max-width: 991px) {
+    /* Name text */
+    .name h1 {
+        font-size: 30px;
+    }
+
+    /* 'Front End Ninja' */
+    .name h3 {
+        font-size: 20px;
+    }
+
+    /* Header of Featured Work */
+    .feature {
+        text-align: center;
+    }
+
+    /* Small image of featured work */
+    .small {
+        display: none;
+    }
+
+    /* Big image of featured work */
+    .big {
+        visibility: visible;
+        display: block;
+        max-width: 600px;
+        max-height: 350px;
+        position: relative;
+        object-fit: cover;
+    }
+}
+
+/* 4.2 Medium Screen: Tablets below 768px
+   ==================================================================*/
+@media only screen and (max-width: 767px) {
+    /* Name text and Title */
+    .name {
+        text-align: center;
+    }
+
+    /* Name text */
+    .name h1 {
+        font-size: 50px;
+    }
+
+    /* 'Front End Ninja' */
+    .name h3 {
+        font-size: 30px;
+    }
+}
+
+/* 4.3 Small Screen: Tablets below 641px
+   ==================================================================*/
+@media only screen and (max-width: 640px) {
+    /* Big Udacity Logo */
+    .image-full {
+        display: none;
+    }
+
+    /* Udacity Logo */
+    .alignImage img{
+        position: relative;
+        height: 100px;
+        width: auto;
+}
+
+    /* Small Udacity Logo */
+    .image-mobile {
+        visibility: visible;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* Name text */
+    .name h1 {
+        font-size: 30px;
+    }
+
+    /* 'Front End Ninja' */
+    .name h3 {
+        font-size: 20px;
+    }
+}
+
+/* 4.4 Extreme-Small Screen: Tablets below 360px
+   ==================================================================*/
+@media only screen and (max-width: 360px) {
+    /* Name text */
+    .name h1 {
+        font-size: 30px;
+    }
+
+    /* 'Front End Ninja' */
+    .name h3 {
+        font-size: 20px;
+    }
+}
