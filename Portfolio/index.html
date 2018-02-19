@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Website Title -->
     <title>Kaiho Chan - Front End Ninja</title>
@@ -13,52 +13,70 @@
 <body>
     <div class="container">
         <!-- Site Header -->
-        <header class="row text-uppercase">
+        <div class="row text-uppercase">
             <!-- Udacity Logo -->
-            <div class="col-md-6 alignImage">
-                <img class="img-responsive image-full" src="img/udacity-2.png" height="100" alt="Udacity Logo">
-                <img class="img-responsive image-mobile" src="img/udacity.png" height="100" alt="Udacity Logo">
+            <div class="col-md-6">
+                <img class="img-responsive logo"
+                    srcset="img/udacity-small.png 340w, img/udacity-big.png 800w"
+                    sizes="(max-width: 500px) 340px, 500px"
+                    src="img/udacity-big.png" alt="Udacity Logo">
             </div>
             <!-- Name -->
             <div class="col-md-6 name">
-                <h1>Kai Ho Chan</hr>
-                <h3>Front End Ninja</hr>
-            </div>
-        </header>
-        <!-- Separate Line -->
-        <hr>
-        <!-- A big image in the center of the screen -->
-        <div class="row">
-            <div class="col-md-12">
-              <img class="img-responsive" src="img/html.jpg" alt="Code">
+                <h1 class="name-text">Kai Ho Chan</h1>
+                <h3 class="front-end-ninja">Front End Ninja</h3>
             </div>
         </div>
-        <!-- Header font -->
-        <h2 class="feature">Featured Work</h2>
+        <!-- Separate Line -->
+        <div class="row">
+            <div class="col">
+                <hr class="ruler">
+            </div>
+        </div>
+        <!-- Image -->
+        <div class="row">
+            <div class="col-md-12">
+              <img class="img-responsive center-image"
+              srcset="img/html-x-small.jpg 340w, img/html-small.jpg 520w,
+              img/html-medium.jpg 720w, img/html.jpg 1000w"
+              sizes="(max-width: 340px) 340px, (max-width: 520px) 520px,
+              (max-width: 720px) 720px, (min-width: 1000px) 1000px"
+              src="img/html.jpg" alt="Code">
+            </div>
+        </div>
+        <!-- Header -->
+        <div class="row">
+            <h2 class = "col feature">Featured Work</h2>
+        </div>
         <!-- Featured Work -->
         <div class="row text-center">
             <!-- Animal Card -->
             <div class="col-lg-4">
-                <img class="img-responsive featured small" src="img/dog-small.jpg" width="340" alt="Animal Card">
-                <img class="img-responsive featured big" src="img/dog.jpg" width ="600" alt="Animal Card">
-                <h3>Animal Card</h3>
-                <p>
-                    <a href="https://github.com/kchan167/animal_card" target="_blank">https://github.com/kchan167/animal_card</a>
+                <img class="img-responsive featured"
+                    src="img/dog-small.jpg" alt="Animal Card">
+                <h3 class="featured-work">Animal Card</h3>
+                <p class="ref">
+                    <a class="ref-link" href="https://github.com/kchan167/animal_card" target="_blank">https://github.com/kchan167/animal_card</a>
                 </p>
             </div>
             <!-- Portfolio Site-->
             <div class="col-lg-4">
-                <img class="img-responsive featured small" src="img/portfolio-small.jpg" width="340" alt="Portfolio">
-                <img class="img-responsive featured big" src="img/portfolio.jpg" alt="Portfolio Site">
-                <h3>Portfolio</h3>
-                <p><a href="https://github.com/kchan167/portfolio_site" target="_blank">https://github.com/kchan167/portfolio_site</a></p>
+                <img class="img-responsive featured"
+                    src="img/portfolio-small.jpg" alt="Portfolio Site">
+                <h3 class="featured-work">Portfolio</h3>
+                <p class="ref">
+                    <a class="ref-link" href="https://github.com/kchan167/portfolio_site" target="_blank">https://github.com/kchan167/portfolio_site</a>
+                </p>
             </div>
             <!-- Coming Soon -->
             <div class="col-lg-4">
-                <img class="img-responsive featured small" id="coming-soon" src="img/github-small.jpg" width="340" alt="More Coming Soon">
-                <img class="img-responsive featured big" id="coming-soon" src="img/github.jpg" alt="More Coming Soon">
-                <h3>More Coming Soon</h3>
-                <p><a href="https://github.com/kchan167" target="_blank">https://github.com/kchan167</a></p>
+                <img class="img-responsive featured"
+                    src="img/github-small.jpg"
+                    alt="More Coming Soon">
+                <h3 class="featured-work">More Coming Soon</h3>
+                <p class="ref">
+                    <a class="ref-link" href="https://github.com/kchan167" target="_blank">https://github.com/kchan167</a>
+                </p>
             </div>
         </div>
     </div>
