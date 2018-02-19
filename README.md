@@ -4,7 +4,7 @@ This is my first time using bootstrap to write a website. It shows the work I ha
 ### Updated on 2/19/2018
 #### After review, I had fixed syntax errors on html file and css file according to the feedback.
 1. Fixed html layout: placed hr inside grid layout.
-2. Removed unncessary tags and style on both html and css files.
+2. Removed unnecessary tags and style on both html and css files.
 3. Changed design and styles to images to make it more responsive.
 4. Applied srcset to udacity logo and centered image.
 5. Removed swap image design for featured works.
