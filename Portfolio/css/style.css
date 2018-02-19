@@ -15,41 +15,23 @@
 /*  =================================================================
     1. Header
     =================================================================*/
-/* Udacity logo position */
-.alignImage {
-    position: relative;
-    height: 100px;
- }
-
-/* Logo image */
-.alignImage img{
-    position: absolute;
-    bottom: 0;
- }
-/* Big image of Udacity logo */
-.image-full {
-    display: block;
+/* Udacity logo */
+.logo {
+    width: auto;
 }
 
-/* Small version of Udacity logo */
-.image-mobile {
-    position:absolute;
-    visibility: hidden;
-    display: none;
-}
-
-/* Name and Title by the top-right corner of the site */
+/* Name and Title */
 .name {
     text-align: right;
 }
 
 /* Name text */
-.name h1 {
+.name-text {
     font-size: 50px;
 }
 
 /* 'Front End Ninja' */
-header h3 {
+.front-end-ninja {
     color: #696969;
 }
 
@@ -57,10 +39,9 @@ header h3 {
     2. Separate Line
     =================================================================*/
 
-/* Ruler used to separate content */
-.container hr {
+/* Ruler*/
+.ruler {
     height: 2px;
-    color: #696969;
     background-color: #696969;
     margin-top: 0;
 }
@@ -73,17 +54,6 @@ header h3 {
 .feature {
     font-size: 35px;
     color: #696969;
-}
-/* Small image of featured works */
-.small {
-    display: block;
-}
-
-/* Big image of featured works */
-.big {
-    position:absolute;
-    visibility: hidden;
-    display: none;
 }
 
 /* Responsive images */
@@ -102,18 +72,18 @@ header h3 {
 }
 
 /* Title of Feature Work */
-.text-center h3 {
+.featured-work {
     text-transform: uppercase;
     color: #696969;
 }
 
 /* Paragraph of the link */
-.text-center p {
+.ref {
     word-wrap: break-word;
 }
 
 /* Link */
-.text-center a {
+.ref-link {
     color: #747474;
 }
 
@@ -123,53 +93,43 @@ header h3 {
 
 /* 4.1 Medium Screen: Tablets and Desktops below 992px
    ==================================================================*/
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
     /* Name text */
-    .name h1 {
+    .name-text {
         font-size: 30px;
     }
 
     /* 'Front End Ninja' */
-    .name h3 {
+    .front-end-ninja {
         font-size: 20px;
+    }
+
+    .center-image {
+        width: 100%;
     }
 
     /* Header of Featured Work */
     .feature {
-        text-align: center;
-    }
-
-    /* Small image of featured work */
-    .small {
-        display: none;
-    }
-
-    /* Big image of featured work */
-    .big {
-        visibility: visible;
-        display: block;
-        max-width: 600px;
-        max-height: 350px;
-        position: relative;
-        object-fit: cover;
+        display: flex;
+        justify-content: center;
     }
 }
 
 /* 4.2 Medium Screen: Tablets below 768px
    ==================================================================*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     /* Name text and Title */
     .name {
         text-align: center;
     }
 
     /* Name text */
-    .name h1 {
+    .name-text {
         font-size: 50px;
     }
 
     /* 'Front End Ninja' */
-    .name h3 {
+    .front-end-ninja {
         font-size: 30px;
     }
 }
@@ -177,46 +137,41 @@ header h3 {
 /* 4.3 Small Screen: Tablets below 641px
    ==================================================================*/
 @media only screen and (max-width: 640px) {
-    /* Big Udacity Logo */
-    .image-full {
-        display: none;
+    /* Responsive image */
+    .img-responsive {
+        margin: 0 auto;
     }
-
-    /* Udacity Logo */
-    .alignImage img{
-        position: relative;
+    /* Logo */
+    .logo {
         height: 100px;
         width: auto;
-}
-
-    /* Small Udacity Logo */
-    .image-mobile {
-        visibility: visible;
-        display: block;
-        object-fit: cover;
     }
 
     /* Name text */
-    .name h1 {
+    .name-text {
         font-size: 30px;
     }
 
     /* 'Front End Ninja' */
-    .name h3 {
+    .front-end-ninja {
         font-size: 20px;
     }
 }
-
 /* 4.4 Extreme-Small Screen: Tablets below 360px
    ==================================================================*/
 @media only screen and (max-width: 360px) {
     /* Name text */
-    .name h1 {
+    .name-text {
         font-size: 30px;
     }
 
     /* 'Front End Ninja' */
-    .name h3 {
+    .front-end-ninja {
         font-size: 20px;
+    }
+
+    /* 'Featured Work' */
+    .feature {
+        font-size: 30px;
     }
 }
