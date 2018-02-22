@@ -57,10 +57,9 @@
 }
 
 /* Responsive images */
-.img-responsive {
+.img-fluid {
     display: block;
     max-width: 100%;
-    width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -107,11 +106,12 @@
     .center-image {
         width: 100%;
     }
-
+    .col-12 {
+        float:left;
+    }
     /* Header of Featured Work */
     .feature {
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -138,12 +138,12 @@
    ==================================================================*/
 @media only screen and (max-width: 640px) {
     /* Responsive image */
-    .img-responsive {
+    .img-fluid {
         margin: 0 auto;
     }
     /* Logo */
     .logo {
-        height: 100px;
+        max-height: 100px;
         width: auto;
     }
 
@@ -173,5 +173,10 @@
     /* 'Featured Work' */
     .feature {
         font-size: 30px;
+    }
+
+    .featured {
+        max-width: 90%;
+        max-height: 90%;
     }
 }
