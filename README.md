@@ -1,6 +1,13 @@
 # Portfolio Site
 This is my first time using bootstrap to write a website. It shows the work I have compeleted through Udacity Front-End Web Developer Nanodegree. 
 ## Change log
+### Updated on 2/22/2018
+#### After second review, I had changed the html tags to be more semantics and made images more responsive.
+1. Fixed html layout: use <header> and <section> instead if <div>
+2. Changed html layout: "Featured Work" is now inside the same <section> tags with other contents.
+3. Use img-fluid instead of img-responsive.
+4. Some adjustment on css to make images more responsive.
+5. Updated README
 ### Updated on 2/19/2018
 #### After review, I had fixed syntax errors on html file and css file according to the feedback.
 1. Fixed html layout: placed hr inside grid layout.
