@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Website Title -->
     <title>Kaiho Chan - Front End Ninja</title>
 </head>
 <body>
     <div class="container">
         <!-- Site Header -->
-        <div class="row text-uppercase">
+        <header class="row text-uppercase">
             <!-- Udacity Logo -->
             <div class="col-md-6">
-                <img class="img-responsive logo"
+                <img class="img-fluid logo"
                     srcset="img/udacity-small.png 340w, img/udacity-big.png 800w"
                     sizes="(max-width: 500px) 340px, 500px"
                     src="img/udacity-big.png" alt="Udacity Logo">
@@ -26,7 +26,7 @@
                 <h1 class="name-text">Kai Ho Chan</h1>
                 <h3 class="front-end-ninja">Front End Ninja</h3>
             </div>
-        </div>
+        </header>
         <!-- Separate Line -->
         <div class="row">
             <div class="col">
@@ -36,23 +36,23 @@
         <!-- Image -->
         <div class="row">
             <div class="col-md-12">
-              <img class="img-responsive center-image"
-              srcset="img/html-x-small.jpg 340w, img/html-small.jpg 520w,
-              img/html-medium.jpg 720w, img/html.jpg 1000w"
-              sizes="(max-width: 340px) 340px, (max-width: 520px) 520px,
-              (max-width: 720px) 720px, (min-width: 1000px) 1000px"
-              src="img/html.jpg" alt="Code">
+                <img class="img-fluid center-image"
+                srcset="img/html-x-small.jpg 340w, img/html-small.jpg 520w,
+                img/html-medium.jpg 720w, img/html.jpg 1000w"
+                sizes="(max-width: 340px) 340px, (max-width: 520px) 520px,
+                (max-width: 720px) 720px, (min-width: 1000px) 1200px"
+                src="img/html.jpg" alt="Code">
             </div>
         </div>
-        <!-- Header -->
-        <div class="row">
-            <h2 class = "col feature">Featured Work</h2>
-        </div>
         <!-- Featured Work -->
-        <div class="row text-center">
-            <!-- Animal Card -->
-            <div class="col-lg-4">
-                <img class="img-responsive featured"
+        <section class="row">
+            <!-- Header -->
+            <div class="col-12">
+                <h2 class = "feature">Featured Work</h2>
+            </div>
+                <!-- Animal Card -->
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid featured"
                     src="img/dog-small.jpg" alt="Animal Card">
                 <h3 class="featured-work">Animal Card</h3>
                 <p class="ref">
@@ -60,8 +60,8 @@
                 </p>
             </div>
             <!-- Portfolio Site-->
-            <div class="col-lg-4">
-                <img class="img-responsive featured"
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid featured"
                     src="img/portfolio-small.jpg" alt="Portfolio Site">
                 <h3 class="featured-work">Portfolio</h3>
                 <p class="ref">
@@ -69,8 +69,8 @@
                 </p>
             </div>
             <!-- Coming Soon -->
-            <div class="col-lg-4">
-                <img class="img-responsive featured"
+            <div class="col-lg-4 text-center">
+                <img class="img-fluid featured"
                     src="img/github-small.jpg"
                     alt="More Coming Soon">
                 <h3 class="featured-work">More Coming Soon</h3>
@@ -78,7 +78,7 @@
                     <a class="ref-link" href="https://github.com/kchan167" target="_blank">https://github.com/kchan167</a>
                 </p>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
